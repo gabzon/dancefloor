@@ -1,0 +1,26 @@
+a.course{
+    text-decoration: none;
+
+    .course-link{ padding-left: 10px; }
+    .course-link:hover{background: #eee;}
+
+    .primary-color{color:$brand-primary;}
+    .secondary-color{color:orange;}
+    .course-time{color:black;}
+    .course-teacher {color:black;}
+
+    .bartak{
+        border-left: 5px solid purple;
+        padding-left: 10px;
+    }
+
+    .kugler{
+        border-left: 5px solid blue;
+        padding-left: 10px;
+    }
+
+    .att{
+        border-left: 5px solid green;
+        padding-left: 10px;
+    }
+}

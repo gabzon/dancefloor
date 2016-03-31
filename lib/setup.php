@@ -86,6 +86,10 @@ function display_sidebar() {
     is_404(),
     is_front_page(),
     is_page_template('template-custom.php'),
+    is_page_template('templates/schedule.php'),
+    is_page_template('templates/teachers.php'),
+    is_singular('course'),
+    is_singular('classroom'),
   ]);
 
   return apply_filters('sage/display_sidebar', $display);

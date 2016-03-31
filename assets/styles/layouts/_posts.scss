@@ -1,0 +1,37 @@
+
+.post-image{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.overlay{
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  opacity:0;
+  transition-duration:300ms;
+  transition-timming-function:ease-in-out;
+}
+.overlay-background{
+  top:0;
+  height:100%;
+  max-width:100%;
+  position:absolute;
+  opacity:.8;
+  background-color:black;
+}
+
+.overlay:hover{
+  opacity:1;
+}
+
+.post-title{
+  text-align:center;
+  width:100%;
+  color:white;
+  top:calc(50% - 13px);
+  position:absolute;
+  font-size: 18px;
+  font-weight:bold;
+}
