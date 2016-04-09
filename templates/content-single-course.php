@@ -21,7 +21,7 @@
                                 <?= get_post_meta($post->ID,'course_level', true); ?>
                                 <?php if (get_post_meta($post->ID,'course_level_number', true)): ?>
                                     (<?= get_post_meta($post->ID,'course_level_number', true); ?>)
-                                <?php endif; ?>                                
+                                <?php endif; ?>
                             </td>
                         </tr>
                         <tr>
@@ -50,7 +50,7 @@
                     </table>
                 </div>
                 <div class="ten wide column">
-                    <?php the_excerpt(); ?>
+                    <?php the_content(); ?>
                     <br>
                     <?php //piklist::pre(get_post_meta($post->ID,'course_holidays')) ?>
                     <?php if (!get_post_meta($post->ID,'course_holidays')[0] == '' ): ?>
