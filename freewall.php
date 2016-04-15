@@ -1,13 +1,12 @@
 <?php
 /**
-* Template Name: landing
+* Template Name: Freewall
 */
 
 // WP_Query arguments
 $args = array (
 'post_type'              => array( 'post' ),
 'order'                  => 'DESC',
-'posts_per_page'        => 9
 );
 
 // The Query
@@ -26,21 +25,23 @@ $query = new WP_Query( $args );
     <br>
     <br>
     <br>
-    <div class="ui three column grid stackable" id="landing-grid">
-
+    <div class="freewall">
         <?php
         // The Loop
         if ( $query->have_posts() ) {
             while ( $query->have_posts() ) {
                 $query->the_post();
                 ?>
-                <div class="column">
-                    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'single-post-thumbnail' ); ?>
+                <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'single-post-thumbnail' ); ?>
+                <article class="grid-item <?php echo get_image_type($image); ?>" >
                     <a href="<?php the_permalink(); ?>">
-                        <img src="<?= $image[0] ?>" class="ui image <?php echo get_image_type($image); ?>"/>
-                        <div class="title" style="text-transform:uppercase"><?php the_title(); ?> </div>
+                        <img src="<?= $image[0] ?>" alt="" class="<?php echo get_image_type($image); ?>"/>
+                        <div class="grid-item-overlay">
+                            <div class="grid-item-overlay-background"></div>
+                            <div class="grid-item-title" style="text-transform:uppercase"><?php the_title(); ?> </div>
+                        </div>
                     </a>
-                </div>
+                </article>
                 <?php
             }
         } else {

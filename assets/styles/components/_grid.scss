@@ -1,10 +1,26 @@
 // Grid system
 .main {
-  @include make-sm-column($main-sm-columns);
-  .sidebar-primary & {
-    @include make-sm-column($main-sm-columns - $sidebar-sm-columns);
-  }
+    @include make-sm-column($main-sm-columns);
+    .sidebar-primary & {
+        @include make-sm-column($main-sm-columns - $sidebar-sm-columns);
+    }
 }
 .sidebar {
-  @include make-sm-column($sidebar-sm-columns);
+    @include make-sm-column($sidebar-sm-columns);
+}
+
+#landing-grid{
+    img.ui.image{ filter: grayscale(80%); }
+    img.ui.image:hover{ filter: grayscale(0%);}
+
+    .title{
+        text-align:center;
+        width:100%;
+        color:white;
+        top:calc(50% - 13px);
+        position:absolute;
+        font-size: 18px;
+        font-weight:bold;
+    }
+
 }

@@ -19,6 +19,7 @@
         'common': {
 
             init: function() {
+
                 $('.ui.embed').embed();
 
                 $('.special.cards .image').dimmer({on: 'hover'});
@@ -29,7 +30,8 @@
                 $('.masonry').masonry({
                     itemSelector: '.grid-item',
                     columnWidth: '.grid-sizer',
-                    gutter: 20
+                    percentPosition: true,
+                    gutter: 20,
                 });
 
                 $('.plan').on('click', function(){

@@ -63,13 +63,22 @@ piklist('field',array(
         $level_number,
     )
 ));
+
 piklist('field',[
         'type' => 'text',
         'label' => __('Level text','sage'),
         'field' => 'course_level_text',
         'columns' => 12,
         'attributes' => ['placeholder' => __('ex: All levels','sage')]
-]) ;
+]);
+
+piklist('field',[
+        'type' => 'text',
+        'label' => __('required Level','sage'),
+        'field' => 'course_required_level',
+        'columns' => 12,
+        'attributes' => ['placeholder' => __('ex: 4 months','sage')]
+]);
 
 $start_date = array(
     'type'      => 'datepicker',

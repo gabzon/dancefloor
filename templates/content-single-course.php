@@ -16,8 +16,8 @@
                 <div class="six wide column">
                     <table class="ui table very basic">
                         <tr>
-                            <td width="20%"><strong><?php _e('Level','sage'); ?>: </strong></td>
-                            <td width="80%">
+                            <td width="25%"><strong><?php _e('Level','sage'); ?>: </strong></td>
+                            <td width="75%">
                                 <?= get_post_meta($post->ID,'course_level', true); ?>
                                 <?php if (get_post_meta($post->ID,'course_level_number', true)): ?>
                                     (<?= get_post_meta($post->ID,'course_level_number', true); ?>)
@@ -35,6 +35,10 @@
                         <tr>
                             <td><strong><?php _e('Period','sage') ?>: </strong></td>
                             <td><?= get_post_meta($post->ID,'course_start_date', true) . ' - ' . get_post_meta($post->ID,'course_end_date', true); ?></td>
+                        </tr>
+                        <tr>
+                            <td><strong><?php _e('Level required','sage') ?></strong></td>
+                            <td><?= get_post_meta($post->ID,'course_required_level',true); ?></td>
                         </tr>
                         <tr>
                             <td><strong>Prof: </strong></td>
