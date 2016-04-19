@@ -46,9 +46,9 @@ function display_person($indice, $id, $email, $photo, $first_name, $last_name, $
 
         </div>
         <div class="content">
-            <a class="header">
+            <div class="header">
                 <h3><?= esc_html( $first_name ); ?> <?= esc_html( $last_name ); ?></h3>
-            </a>
+            </div>
             <div class="meta">
                 <?= esc_html($title); ?>
             </div>
