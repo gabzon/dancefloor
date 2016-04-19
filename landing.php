@@ -27,7 +27,6 @@ $query = new WP_Query( $args );
     <br>
     <br>
     <div class="ui three column grid stackable" id="landing-grid">
-
         <?php
         // The Loop
         if ( $query->have_posts() ) {
@@ -51,4 +50,6 @@ $query = new WP_Query( $args );
         wp_reset_postdata();
         ?>
     </div>
+    <br>
+    <br>
 <?php endwhile; ?>

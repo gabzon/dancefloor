@@ -4,6 +4,18 @@ Title: User extra info
 Capability: manage_options
 */
 
+piklist('field',[
+    'type' => 'file',
+    'field' => 'photo',
+    'label' => __('Add File(s)','piklist'),
+    'description' => __('This is the uploader seen in the admin by default.','piklist'),
+    'options' => [
+        'basic' => true,
+        'modal_title' => __('Add File(s)','piklist'),
+        'button' => __('Add','piklist'),
+    ],
+]);
+
 // Let's create a text box field
 piklist('field', array(
     'type'      => 'text',
@@ -34,24 +46,20 @@ piklist('field', array(
     'columns'   => 12
 ));
 
-$year = [
-    'type'      => 'text',
-    'field'     => 'year',
-    'label'     => __('Year','sage'),
-    'columns'   => 2
-];
-
-$done = [
-    'type'      => 'textarea',
-    'field'     => 'achived',
-    'label'     => __('Description','sage'),
-    'columns'   => 10
-];
-
 piklist('field', array(
-    'type'      => 'group',
+    'type'      => 'editor',
+    'field'     => 'accomplishments',
     'label'     => __('Accomplishments','sage'),
-    'add_more'  => true,
-    'columns'   => 12,
-    'fields' => [ $year, $done ]
+    'columns'   => 12
+    ,'options' => array (
+          'wpautop' => true
+          ,'media_buttons' => true
+          ,'tabindex' => ''
+          ,'editor_css' => ''
+          ,'editor_class' => ''
+          ,'teeny' => false
+          ,'dfw' => false
+          ,'tinymce' => true
+          ,'quicktags' => true
+        )
 ));
