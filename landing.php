@@ -7,7 +7,7 @@
 $args = array (
 'post_type'              => array( 'post' ),
 'order'                  => 'DESC',
-'posts_per_page'        => 9
+'posts_per_page'        => 6
 );
 
 // The Query

@@ -1,0 +1,476 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: dancefloor\n"
+"POT-Creation-Date: 2016-04-27 22:43+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.6\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+"X-Poedit-SearchPathExcluded-0: ../node_modules\n"
+"X-Poedit-SearchPathExcluded-1: ../bower_components\n"
+
+#: ../404.php:4
+msgid "Sorry, but the page you were trying to view does not exist."
+msgstr "Désolé, cette page est introuvable."
+
+#: ../base.php:14
+msgid ""
+"You are using an <strong>outdated</strong> browser. Please <a href=\"http://"
+"browsehappy.com/\">upgrade your browser</a> to improve your experience."
+msgstr ""
+"Vous utilisez une version obsolète de votre navigateur. Veuillez le  <a href="
+"\"http://browsehappy.com/\">mettre à jour</a> pour visionner votre site "
+"correctement."
+
+#: ../freewall.php:48 ../landing.php:46 ../masonry.php:49
+msgid "There are no post"
+msgstr "Il n'y a pas d'articles"
+
+#: ../functions.php:28
+#, php-format
+msgid "Error locating %s for inclusion"
+msgstr "Erreurr localiser %s pour inclusion"
+
+#: ../functions.php:51 ../piklist/parts/meta-boxes/course.php:151
+#: ../templates/schedule.php:38
+msgid "Teacher"
+msgstr "Prof"
+
+#: ../functions.php:52
+msgid "Assistant"
+msgstr "Assistant"
+
+#: ../index.php:5 ../search.php:5
+msgid "Sorry, no results were found."
+msgstr "Désolé, rien n'a été trouvé."
+
+#: ../lib/course.php:27
+msgid "We are not able to find any classroom currently"
+msgstr "Actuellement nous ne pouvons pas trouver de salle"
+
+#: ../lib/course.php:85
+msgid "There are no courses currently"
+msgstr "Actuellement il n'y a pas des cours"
+
+#: ../lib/extras.php:31
+msgid "Continued"
+msgstr "Suite"
+
+#: ../lib/setup.php:30
+msgid "Primary Navigation"
+msgstr "Navigation Primaire"
+
+#: ../lib/setup.php:58
+msgid "Primary"
+msgstr "Primaire"
+
+#: ../lib/setup.php:67
+msgid "Footer"
+msgstr "Pied de page"
+
+#: ../lib/titles.php:13
+msgid "Latest Posts"
+msgstr "Articles Récents"
+
+#: ../lib/titles.php:18
+#, php-format
+msgid "Search Results for %s"
+msgstr "Résultats pour %s"
+
+#: ../lib/titles.php:20
+msgid "Not Found"
+msgstr "Non Trouvé"
+
+#: ../models/post-type/classroom.php:7 ../models/post-type/classroom.php:8
+#: ../models/post-type/classroom.php:28
+#: ../templates/content-single-course.php:77
+msgid "Classroom"
+msgstr "Salle"
+
+#: ../models/post-type/classroom.php:9
+msgid "Classrooms"
+msgstr "Salles"
+
+#: ../models/post-type/classroom.php:10 ../models/post-type/course.php:10
+msgid "Parent Item:"
+msgstr "Article parent:"
+
+#: ../models/post-type/classroom.php:11
+msgid "All Classrooms"
+msgstr "Toutes les salles"
+
+#: ../models/post-type/classroom.php:12
+msgid "View Classroom"
+msgstr "Voir salle"
+
+#: ../models/post-type/classroom.php:13
+msgid "Add New Classroom"
+msgstr "Ajouter salle"
+
+#: ../models/post-type/classroom.php:14 ../models/post-type/course.php:14
+msgid "Add New"
+msgstr "Ajouter nouveau"
+
+#: ../models/post-type/classroom.php:15
+msgid "Edit Classroom"
+msgstr "Editer salle"
+
+#: ../models/post-type/classroom.php:16
+msgid "Update Classroom"
+msgstr "Actualiser salle"
+
+#: ../models/post-type/classroom.php:17
+msgid "Search Classroom"
+msgstr "Chercher salle"
+
+#: ../models/post-type/classroom.php:18 ../models/post-type/course.php:18
+msgid "Not found"
+msgstr "Pas trouvé"
+
+#: ../models/post-type/classroom.php:19 ../models/post-type/course.php:19
+msgid "Not found in Trash"
+msgstr "Pas trouvé dans la corbeille"
+
+#: ../models/post-type/classroom.php:29
+msgid "List of classrooms"
+msgstr "Liste de salles"
+
+#: ../models/post-type/course.php:7 ../models/post-type/course.php:8
+#: ../models/post-type/course.php:28
+msgid "Course"
+msgstr "Cours"
+
+#: ../models/post-type/course.php:9
+msgid "Courses"
+msgstr "Cours"
+
+#: ../models/post-type/course.php:11
+msgid "All Courses"
+msgstr "Tout les cours"
+
+#: ../models/post-type/course.php:12
+msgid "View Course"
+msgstr "Voir cours"
+
+#: ../models/post-type/course.php:13
+msgid "Add New Course"
+msgstr "Ajouter cours"
+
+#: ../models/post-type/course.php:15
+msgid "Edit Course"
+msgstr "Editer cours"
+
+#: ../models/post-type/course.php:16
+msgid "Update Course"
+msgstr "Actualiser cours"
+
+#: ../models/post-type/course.php:17
+msgid "Search Course"
+msgstr "Chercher cours"
+
+#: ../models/post-type/course.php:29
+msgid "List of danse courses"
+msgstr "Liste de cours de danse"
+
+#: ../piklist/parts/meta-boxes/classroom.php:9
+msgid "N°, Address"
+msgstr "N°, Adresse"
+
+#: ../piklist/parts/meta-boxes/classroom.php:16
+msgid "Postal Code"
+msgstr "NPA"
+
+#: ../piklist/parts/meta-boxes/classroom.php:23
+msgid "City"
+msgstr "Ville"
+
+#: ../piklist/parts/meta-boxes/classroom.php:30
+msgid "Neighborhood"
+msgstr "Quartier"
+
+#: ../piklist/parts/meta-boxes/classroom.php:37 ../templates/schedule.php:41
+msgid "Place"
+msgstr "Lieu"
+
+#: ../piklist/parts/meta-boxes/classroom.php:47
+msgid "Google Maps Short Link"
+msgstr "Google Maps Short Link"
+
+#: ../piklist/parts/meta-boxes/classroom.php:49
+msgid "Opens google maps on a new tab"
+msgstr "Ouvrir google maps dans un nouveau onglet"
+
+#: ../piklist/parts/meta-boxes/classroom.php:55
+msgid "Google Map"
+msgstr "Google Map"
+
+#: ../piklist/parts/meta-boxes/classroom.php:57
+msgid "Embed google map on the website"
+msgstr "Embed le google map dans le site internet"
+
+#: ../piklist/parts/meta-boxes/classroom.php:64
+msgid "Classroom color"
+msgstr "Couleur de la salle"
+
+#: ../piklist/parts/meta-boxes/classroom.php:73
+msgid "This classroom requires special shoes on the dancefloor"
+msgstr "Cette salle exige des chausseurs specials"
+
+#: ../piklist/parts/meta-boxes/classroom.php:82
+msgid "Add Photo(s)"
+msgstr "Ajouter photo(s)"
+
+#: ../piklist/parts/meta-boxes/course.php:9
+#: ../piklist/parts/users/profs.php:37
+msgid "Title"
+msgstr "Titre"
+
+#: ../piklist/parts/meta-boxes/course.php:16
+#: ../piklist/parts/meta-boxes/course.php:60
+#: ../templates/content-single-course.php:19 ../templates/schedule.php:34
+msgid "Level"
+msgstr "Niveau"
+
+#: ../piklist/parts/meta-boxes/course.php:21
+msgid "Beginner"
+msgstr "Débutant"
+
+#: ../piklist/parts/meta-boxes/course.php:22
+msgid "Intermediate"
+msgstr "Intermediaire"
+
+#: ../piklist/parts/meta-boxes/course.php:23
+msgid "Advanced"
+msgstr "Avancé"
+
+#: ../piklist/parts/meta-boxes/course.php:24
+msgid "All levels"
+msgstr "Tout les niveaux"
+
+#: ../piklist/parts/meta-boxes/course.php:30
+msgid "Level Number"
+msgstr "Numéro du niveau"
+
+#: ../piklist/parts/meta-boxes/course.php:69
+msgid "Level text"
+msgstr "Text du niveau"
+
+#: ../piklist/parts/meta-boxes/course.php:72
+msgid "ex: All levels"
+msgstr "ex: tout niveaux"
+
+#: ../piklist/parts/meta-boxes/course.php:77
+msgid "required Level"
+msgstr "Niveau requis"
+
+#: ../piklist/parts/meta-boxes/course.php:80
+msgid "ex: 4 months"
+msgstr "ex: 4 mois"
+
+#: ../piklist/parts/meta-boxes/course.php:85
+msgid "Start date"
+msgstr "Date début"
+
+#: ../piklist/parts/meta-boxes/course.php:93
+msgid "End date"
+msgstr "Date fin"
+
+#: ../piklist/parts/meta-boxes/course.php:101
+msgid "Session period"
+msgstr "Période de la session"
+
+#: ../piklist/parts/meta-boxes/course.php:110
+#: ../templates/content-single-course.php:28
+msgid "Day"
+msgstr "Jour"
+
+#: ../piklist/parts/meta-boxes/course.php:126
+msgid "Start Time"
+msgstr "Heure début"
+
+#: ../piklist/parts/meta-boxes/course.php:133
+msgid "End Time"
+msgstr "Heure fin"
+
+#: ../piklist/parts/meta-boxes/course.php:140
+msgid "Day and time"
+msgstr "Jour et heure"
+
+#: ../piklist/parts/meta-boxes/course.php:162
+msgid "Holidays"
+msgstr "Vacances"
+
+#: ../piklist/parts/meta-boxes/course.php:171
+msgid "Attention Message"
+msgstr "Message d'attention"
+
+#: ../piklist/parts/users/profs.php:10 ../piklist/parts/users/profs.php:14
+msgid "Add File(s)"
+msgstr "Ajouter fichier(s)"
+
+#: ../piklist/parts/users/profs.php:11
+msgid "This is the uploader seen in the admin by default."
+msgstr "Cet uploader est vue par l'administrateur par défault"
+
+#: ../piklist/parts/users/profs.php:15
+msgid "Add"
+msgstr "Ajouter"
+
+#: ../piklist/parts/users/profs.php:23
+msgid "Phone number"
+msgstr "Numéro de téléphone"
+
+#: ../piklist/parts/users/profs.php:30
+msgid "facebook"
+msgstr "Facebook"
+
+#: ../piklist/parts/users/profs.php:44
+msgid "Styles & Talents"
+msgstr "Styles et talents"
+
+#: ../piklist/parts/users/profs.php:52
+msgid "Accomplishments"
+msgstr "Réalisations"
+
+#: ../templates/comments.php:19
+msgid "&larr; Older comments"
+msgstr "&larr; Commentaires anciens"
+
+#: ../templates/comments.php:22
+msgid "Newer comments &rarr;"
+msgstr "Commentaires récents &rarr;"
+
+#: ../templates/comments.php:31
+msgid "Comments are closed."
+msgstr "Commentaires fermés."
+
+#: ../templates/content-page.php:2
+#: ../templates/content-single-classroom.php:14
+#: ../templates/content-single-course.php:116
+#: ../templates/content-single.php:39
+msgid "Pages:"
+msgstr "Pages:"
+
+#: ../templates/content-single-course.php:32
+msgid "Time"
+msgstr "Heure"
+
+#: ../templates/content-single-course.php:36
+msgid "Period"
+msgstr "Période"
+
+#: ../templates/content-single-course.php:40
+msgid "Level required"
+msgstr "Niveau requis"
+
+#: ../templates/content-single-course.php:49
+msgid "Not available"
+msgstr "Pas disponible"
+
+#: ../templates/content-single-course.php:62
+msgid "Holidays (there won't be courses during this dates)"
+msgstr "Vacances (Il n'y aura pas des vacances pendant ses dates)"
+
+#: ../templates/content-single-course.php:98
+msgid "Open on Google maps"
+msgstr "Ouvrir en google maps"
+
+#: ../templates/content-single-course.php:104
+msgid "Attention: street shoes not allowed"
+msgstr "Attention: chausseur de ville pas permis"
+
+#: ../templates/entry-meta.php:2
+msgid "By"
+msgstr "Par"
+
+#: ../templates/header.php:11
+msgid "Toggle navigation"
+msgstr "Basculer la navigation"
+
+#: ../templates/schedule.php:65
+msgid "Monday"
+msgstr "Lundi"
+
+#: ../templates/schedule.php:75
+msgid "Tuesday"
+msgstr "Mardi"
+
+#: ../templates/schedule.php:84
+msgid "Wednesday"
+msgstr "Mercredi"
+
+#: ../templates/schedule.php:93
+msgid "Thursday"
+msgstr "Jeudi"
+
+#: ../templates/schedule.php:102
+msgid "Friday"
+msgstr "Vendredi"
+
+#: ../templates/schedule.php:111
+msgid "Saturday"
+msgstr "Samedi"
+
+#: ../templates/schedule.php:120
+msgid "Sunday"
+msgstr "Dimanche"
+
+#: ../templates/teachers.php:36
+msgid "View"
+msgstr "Vue"
+
+#: ../templates/teachers.php:58
+msgid "Skills"
+msgstr "Compétences"
+
+#: ../templates/teachers.php:91
+msgid "Teachers"
+msgstr "Profs"
+
+#: ../templates/teachers.php:105
+msgid "The team"
+msgstr "L'équipe"
+
+#~ msgctxt "comments title"
+#~ msgid "One response to &ldquo;%2$s&rdquo;"
+#~ msgid_plural "%1$s responses to &ldquo;%2$s&rdquo;"
+#~ msgstr[0] "Une réponse à &ldquo;%2$s&rdquo;"
+#~ msgstr[1] "%1$s réponses à &ldquo;%2$s&rdquo;"
+
+#~ msgid "Search for:"
+#~ msgstr "Rechercher:"
+
+#~ msgid "Search"
+#~ msgstr "Recherche"
+
+#~ msgid "Sage Starter Theme"
+#~ msgstr "Sage Thème Starter"
+
+#~ msgid "https://roots.io/sage/"
+#~ msgstr "https://roots.io/sage/"
+
+#~ msgid ""
+#~ "Sage is a WordPress starter theme. <a href=\"https://github.com/roots/sage"
+#~ "\">Contribute on GitHub</a>"
+#~ msgstr ""
+#~ "Sage est un thème de démarrage WordPress (Starter Theme). <a href="
+#~ "\"https://github.com/roots/sage\">Contribuer sur GitHub</a>"
+
+#~ msgid "Roots"
+#~ msgstr "Roots"
+
+#~ msgid "https://roots.io/"
+#~ msgstr "https://roots.io/"
+
+#~ msgid "Custom Template"
+#~ msgstr "Custom Template "

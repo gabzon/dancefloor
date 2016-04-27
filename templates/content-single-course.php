@@ -26,7 +26,7 @@
                         </tr>
                         <tr>
                             <td><strong><?php _e('Day','sage') ?>: </strong></td>
-                            <td><?= get_post_meta($post->ID,'course_day', true); ?></td>
+                            <td><?php _e(get_post_meta($post->ID,'course_day', true),'sage') ?></td>
                         </tr>
                         <tr>
                             <td><strong><?php _e('Time','sage') ?>: </strong></td>
@@ -37,7 +37,7 @@
                             <td><?= get_post_meta($post->ID,'course_start_date', true) . ' - ' . get_post_meta($post->ID,'course_end_date', true); ?></td>
                         </tr>
                         <tr>
-                            <td><strong><?php _e('Level required','sage') ?></strong></td>
+                            <td><strong><?php _e('Level required','sage') ?></strong>: </td>
                             <td><?= get_post_meta($post->ID,'course_required_level',true); ?></td>
                         </tr>
                         <tr>
