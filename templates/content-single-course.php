@@ -120,13 +120,13 @@
         <br>
         <br>
         <?php $theme_options = get_option('dancefloor_settings'); ?>
-        <?php $form = $theme_options['form']; ?>
+        <?php $form = $theme_options['registration_form']; ?>
         <?php if ($form): ?>
             <section id="inscription">
                 <div class="ui divider"></div>
                 <h3><?php _e('Registration', 'sage'); ?></h3>
                 <div class="ui form">
-                    <?= $form; ?>
+                    <?= do_shortcode($form); ?>
                 </div>
             </section>
         <?php endif; ?>
