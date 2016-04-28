@@ -121,13 +121,15 @@
         <br>
         <?php $theme_options = get_option('dancefloor_settings'); ?>
         <?php $form = $theme_options['registration_form']; ?>
+        <?php echo do_shortcode('[gravityform id=23]'); ?>
         <?php if ($form): ?>
             <section id="inscription">
                 <div class="ui divider"></div>
                 <h3><?php _e('Registration', 'sage'); ?></h3>
                 <div class="ui form">
                     <?php //echo $form; ?>
-                    <?php echo do_shortcode('[gravityform id=23  ajax=true remove_id=true]'); ?>
+                    <?php echo do_shortcode('[gravityform id=23]'); ?>
+
                 </div>
             </section>
         <?php endif; ?>
