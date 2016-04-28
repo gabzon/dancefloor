@@ -13,7 +13,7 @@
                 </div>
             <?php endif; ?>
             <div class="ui grid stackable">
-                <div class="six wide column">
+                <div class="five wide column">
                     <table class="ui table very basic">
                         <tr>
                             <td width="25%"><strong><?php _e('Level','sage'); ?>: </strong></td>
@@ -36,10 +36,12 @@
                             <td><strong><?php _e('Period','sage') ?>: </strong></td>
                             <td><?= get_post_meta($post->ID,'course_start_date', true) . ' - ' . get_post_meta($post->ID,'course_end_date', true); ?></td>
                         </tr>
-                        <tr>
-                            <td><strong><?php _e('Level required','sage') ?></strong>: </td>
-                            <td><?= get_post_meta($post->ID,'course_required_level',true); ?></td>
-                        </tr>
+                        <?php if (get_post_meta($post->ID,'course_required_level',true)): ?>
+                            <tr>
+                                <td><strong><?php _e('Level required','sage') ?></strong>: </td>
+                                <td><?= get_post_meta($post->ID,'course_required_level',true); ?></td>
+                            </tr>
+                        <?php endif; ?>
                         <tr>
                             <td><strong>Prof: </strong></td>
                             <td>
@@ -50,9 +52,14 @@
                                 <?php endif; ?>
                             </td>
                         </tr>
-
+                        <tr>
+                            <td colspan="2">
+                                <a href="#inscription" class="ui red fluid button"><i class="edit icon"></i> <?php _e('Registration','sage') ?></a>
+                            </td>
+                        </tr>
                     </table>
                 </div>
+                <div class="one wide column"></div>
                 <div class="ten wide column">
                     <?php the_content(); ?>
                     <br>
@@ -85,8 +92,8 @@
             ));
             ?>
             <?php foreach ($classroom as $salle): ?>
-                <div class="ui three column grid stackable">
-                    <div class="column">
+                <div class="ui grid stackable course-place">
+                    <div class="five wide column">
                         <table class="ui very basic table">
                             <tr>
                                 <td width="5%"><i class="home icon"></i></td>
@@ -104,14 +111,25 @@
                             <i class="circle warning icon"></i><?php _e('Attention: street shoes not allowed','sage'); ?>
                         </div>
                     </div>
-                    <div class="column">
+                    <div class="eleven wide column map">
                         <?= get_post_meta($salle->ID,'classroom_google_map',true); ?>
                     </div>
                 </div>
             <?php endforeach; ?>
-
-
         </div>
+        <br>
+        <br>
+        <?php $theme_options = get_option('dancefloor_settings'); ?>
+        <?php $form = $theme_options['form']; ?>
+        <?php if ($form): ?>
+            <section id="inscription">
+                <div class="ui divider"></div>
+                <h3><?php _e('Registration', 'sage'); ?></h3>
+                <div class="ui form">
+                    <?= $form; ?>
+                </div>
+            </section>
+        <?php endif; ?>
         <footer>
             <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
         </footer>

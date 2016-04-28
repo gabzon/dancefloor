@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: dancefloor\n"
-"POT-Creation-Date: 2016-04-28 02:15+0100\n"
+"POT-Creation-Date: 2016-04-28 12:20+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -50,6 +50,18 @@ msgstr "Prof"
 msgid "Assistant"
 msgstr "Assistant"
 
+#: ../functions.php:58
+msgid "Custom Settings"
+msgstr "Réglages personnalisé"
+
+#: ../functions.php:59
+msgid "Settings"
+msgstr "Réglages"
+
+#: ../functions.php:68
+msgid "Save"
+msgstr "Sauvegarder"
+
 #: ../index.php:5 ../search.php:5
 msgid "Sorry, no results were found."
 msgstr "Désolé, rien n'a été trouvé."
@@ -93,7 +105,7 @@ msgstr "Non Trouvé"
 
 #: ../models/post-type/classroom.php:7 ../models/post-type/classroom.php:8
 #: ../models/post-type/classroom.php:28
-#: ../templates/content-single-course.php:77
+#: ../templates/content-single-course.php:84
 msgid "Classroom"
 msgstr "Salle"
 
@@ -224,7 +236,7 @@ msgstr "Couleur de la salle"
 
 #: ../piklist/parts/meta-boxes/classroom.php:73
 msgid "This classroom requires special shoes on the dancefloor"
-msgstr "Cette salle exige des chausseurs specials"
+msgstr "Cette salle exige des chaussures specials"
 
 #: ../piklist/parts/meta-boxes/classroom.php:82
 msgid "Add Photo(s)"
@@ -314,6 +326,14 @@ msgstr "Vacances"
 msgid "Attention Message"
 msgstr "Message d'attention"
 
+#: ../piklist/parts/settings/settings.php:8
+msgid "Registration form"
+msgstr "Formulaire d'inscription"
+
+#: ../piklist/parts/settings/settings.php:9
+msgid "Copy and paste gravity form shortcode"
+msgstr "Copiez et collez le shortcode de l'extension gravity form"
+
 #: ../piklist/parts/users/profs.php:10 ../piklist/parts/users/profs.php:14
 msgid "Add File(s)"
 msgstr "Ajouter fichier(s)"
@@ -356,7 +376,7 @@ msgstr "Commentaires fermés."
 
 #: ../templates/content-page.php:2
 #: ../templates/content-single-classroom.php:14
-#: ../templates/content-single-course.php:116
+#: ../templates/content-single-course.php:134
 #: ../templates/content-single.php:39
 msgid "Pages:"
 msgstr "Pages:"
@@ -369,25 +389,30 @@ msgstr "Heure"
 msgid "Period"
 msgstr "Période"
 
-#: ../templates/content-single-course.php:40
+#: ../templates/content-single-course.php:41
 msgid "Level required"
 msgstr "Niveau requis"
 
-#: ../templates/content-single-course.php:49
+#: ../templates/content-single-course.php:51
 msgid "Not available"
 msgstr "Pas disponible"
 
-#: ../templates/content-single-course.php:62
+#: ../templates/content-single-course.php:57
+#: ../templates/content-single-course.php:127
+msgid "Registration"
+msgstr "Inscription"
+
+#: ../templates/content-single-course.php:69
 msgid "Holidays (there won't be courses during this dates)"
 msgstr "Vacances (Il n'y aura pas des vacances pendant ses dates)"
 
-#: ../templates/content-single-course.php:98
+#: ../templates/content-single-course.php:105
 msgid "Open on Google maps"
 msgstr "Ouvrir en google maps"
 
-#: ../templates/content-single-course.php:104
+#: ../templates/content-single-course.php:111
 msgid "Attention: street shoes not allowed"
-msgstr "Attention: chausseur de ville pas permis"
+msgstr "Attention: chaussure de ville pas permis"
 
 #: ../templates/entry-meta.php:2
 msgid "By"

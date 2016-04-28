@@ -24,3 +24,7 @@ a.course{
         padding-left: 10px;
     }
 }
+
+.map{
+    iframe, object, embed{ max-width: 100% !important; }
+}

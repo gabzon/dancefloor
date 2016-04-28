@@ -19,7 +19,7 @@ $query = new WP_Query( $args );
     <br>
     <br>
     <br>
-    <h1 style="text-align:center; text-transform:uppercase; margin:0; font-size:76px; letter-spacing:2px;"><span style="color:#BF2E36">DANCE</span>FLOOR</h1>
+    <h1 class="landing-title"><span style="color:#BF2E36">DANCE</span>FLOOR</h1>
     <!-- <hr style="margin:0"> -->
     <h2 style="background:black;color:white;text-align:center; text-transform:uppercase; margin:0; letter-spacing:0.1px; font-size:25px">école & Compagnie de danse à Genève</h2>
     <br>

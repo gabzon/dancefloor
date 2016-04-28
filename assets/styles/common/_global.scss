@@ -8,3 +8,19 @@ h1, h2, h3, h4, h5, h6 { font-weight: 700; }
 p, a { font-weight: 400;}
 
 iframe, object, embed{ max-width: 100%; }
+
+h1.landing-title{
+    text-align:center;
+    text-transform:uppercase;
+    margin:0;
+    font-size:76px;
+    letter-spacing:2px;
+    /* Portrait and Landscape */
+    @media only screen
+      and (min-device-width: 320px)
+      and (max-device-width: 736px)
+      and (-webkit-min-device-pixel-ratio: 2) {
+        font-size:56px;
+        background: blue;
+    }
+}

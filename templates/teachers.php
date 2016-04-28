@@ -111,6 +111,5 @@ function display_person($indice, $id, $email, $photo, $first_name, $last_name, $
         <?php $title = get_user_meta($user->ID,'title', true); ?>
         <?php display_person($indice, $user->ID, $user->user_email, $photo, $user->first_name, $user->last_name, $title, $user->description); ?>
         <?php $indice++ ?>
-
     <?php endforeach ?>
 </div>
