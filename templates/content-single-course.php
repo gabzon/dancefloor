@@ -129,7 +129,7 @@
                 <div class="ui form">
                     <?php //echo $form; ?>
                     <?php echo do_shortcode('[gravityform id=23]'); ?>
-
+                    <?php gravity_form('23'); ?>
                 </div>
             </section>
         <?php endif; ?>
