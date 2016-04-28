@@ -427,7 +427,7 @@ msgstr "Dimanche"
 
 #: ../templates/teachers.php:36
 msgid "View"
-msgstr "Vue"
+msgstr "Voir"
 
 #: ../templates/teachers.php:58
 msgid "Skills"
