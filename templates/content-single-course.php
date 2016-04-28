@@ -52,11 +52,11 @@
                                 <?php endif; ?>
                             </td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <td colspan="2">
                                 <a href="#inscription" class="ui red fluid button"><i class="edit icon"></i> <?php _e('Registration','sage') ?></a>
                             </td>
-                        </tr>
+                        </tr> -->
                     </table>
                 </div>
                 <div class="one wide column"></div>
@@ -126,7 +126,7 @@
                 <div class="ui divider"></div>
                 <h3><?php _e('Registration', 'sage'); ?></h3>
                 <div class="ui form">
-                    <?php echo $form; ?>
+                    <?php //echo $form; ?>
                     <?php echo do_shortcode($form); ?>
                 </div>
             </section>
