@@ -21,7 +21,7 @@ $level = array(
         'Beginner'      => __('Beginner','sage'),
         'Intermediate'  => __('Intermediate','sage'),
         'Advanced'      => __('Advanced','sage'),
-        'All'           => __('All levels')
+        'All'           => __('All levels','sage')
     )
 );
 
