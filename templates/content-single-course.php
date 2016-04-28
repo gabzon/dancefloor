@@ -126,8 +126,8 @@
             <h3><?php //_e('Registration', 'sage'); ?></h3>
             <div class="ui form">
                 <?php //echo $form; ?>
-                <?php echo 'h'; ?>
-                <?php gravity_form(23, false, false, false, '', true); ?>
+                <?php echo 'ha'; ?>
+                <?php echo gravity_form(23, false, false, false, '', true); ?>
             </div>
         </section>
         <footer>
