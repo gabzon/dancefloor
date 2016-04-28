@@ -126,7 +126,8 @@
                 <div class="ui divider"></div>
                 <h3><?php _e('Registration', 'sage'); ?></h3>
                 <div class="ui form">
-                    <?php do_shortcode($form); ?>
+                    <?php echo $form; ?>
+                    <?php echo do_shortcode($form); ?>
                 </div>
             </section>
         <?php endif; ?>
