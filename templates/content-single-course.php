@@ -122,6 +122,7 @@
         <?php $theme_options = get_option('dancefloor_settings'); ?>
         <?php $form = $theme_options['registration_form']; ?>
         <?php echo do_shortcode('[gravityform id=23]'); ?>
+        <?php gravity_form(23); ?>
         <?php if ($form): ?>
             <section id="inscription">
                 <div class="ui divider"></div>
@@ -129,7 +130,7 @@
                 <div class="ui form">
                     <?php //echo $form; ?>
                     <?php echo do_shortcode('[gravityform id=23]'); ?>
-                    <?php gravity_form('23'); ?>
+
                 </div>
             </section>
         <?php endif; ?>
