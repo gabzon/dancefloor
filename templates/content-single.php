@@ -24,11 +24,9 @@
     <?php else: ?>
         <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>" alt="" class="ui image" />
         <article <?php post_class(); ?>>
-            <header class="page-header">
-                <h1 class="entry-title">
-                    <?php the_title(); ?>
-                    <small><?php get_template_part('templates/entry-meta'); ?></small>
-                </h1>
+            <header class="article-title">
+                <h1 class="entry-title"><?php the_title(); ?></h1>
+                <small><?php get_template_part('templates/entry-meta'); ?></small>
             </header>
             <br>
             <div class="entry-content">
