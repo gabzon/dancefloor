@@ -8,11 +8,10 @@
             </div>
             <div class="twelve wide column">
                 <article <?php post_class(); ?>>
-                    <header class="page-header">
-                        <h1 class="entry-title">
-                            <?php the_title(); ?>
-                            <small><?php get_template_part('templates/entry-meta'); ?></small>
-                        </h1>
+                    <header class="article-title">
+                        <h1 class="entry-title"><?php the_title(); ?></h1>
+                        <div class="ui divider"></div>
+                        <small style="color:grey"><?php get_template_part('templates/entry-meta'); ?></small>
                     </header>
                     <br>
                     <div class="entry-content">
@@ -26,6 +25,7 @@
         <article <?php post_class(); ?>>
             <header class="article-title">
                 <h1 class="entry-title"><?php the_title(); ?></h1>
+                <div class="ui divider"></div>
                 <small><?php get_template_part('templates/entry-meta'); ?></small>
             </header>
             <br>
