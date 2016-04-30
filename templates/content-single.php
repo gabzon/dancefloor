@@ -8,12 +8,12 @@
             </div>
             <div class="twelve wide column">
                 <article <?php post_class(); ?>>
-                    <header class="article-title">
-                        <h1 class="entry-title"><?php the_title(); ?></h1>
-                        <div class="ui divider"></div>
+                    <header class="article-title" style="margin-top:15px;">
+                        <h1 style="margin-bottom:0"><?php the_title(); ?></h1>
+                        <hr>
                         <small style="color:grey"><?php get_template_part('templates/entry-meta'); ?></small>
                     </header>
-                    <br>
+                    <hr style="margin-top:0; margin-bottom:0;">
                     <div class="entry-content">
                         <?php the_content(); ?>
                     </div>
@@ -23,9 +23,9 @@
     <?php else: ?>
         <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>" alt="" class="ui image" />
         <article <?php post_class(); ?>>
-            <header class="article-title">
-                <h1 class="entry-title"><?php the_title(); ?></h1>
-                <div class="ui divider"></div>
+            <header class="article-title" style="margin-top:15px;">
+                <h1 style="margin-bottom:0"><?php the_title(); ?></h1>
+                <hr style="margin-top:0; margin-bottom:0;">
                 <small><?php get_template_part('templates/entry-meta'); ?></small>
             </header>
             <br>
