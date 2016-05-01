@@ -459,7 +459,7 @@ msgstr "Compétences"
 
 #: ../templates/teachers.php:91
 msgid "Company Dancers"
-msgstr "Danseurs de la compagnie"
+msgstr "Danseurs - compagnie"
 
 #: ../templates/teachers.php:105
 msgid "Teachers"
