@@ -19,6 +19,9 @@
                 <a class="ui circular google plus icon button" target="_blank" href="https://plus.google.com/+DancefloorgenevasalsaCh/videos">
                     <i class="google plus icon"></i>
                 </a>
+                <a class="ui circular twitter icon button" target="_blank" href="https://twitter.com/DancefloorGe">
+                    <i class="twitter icon"></i>
+                </a>
             </div>
         </div>
         <br>
