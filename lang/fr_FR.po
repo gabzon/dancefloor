@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: dancefloor\n"
-"POT-Creation-Date: 2016-04-28 12:20+0100\n"
+"POT-Creation-Date: 2016-05-02 01:17+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -376,8 +376,8 @@ msgstr "Commentaires fermés."
 
 #: ../templates/content-page.php:2
 #: ../templates/content-single-classroom.php:14
-#: ../templates/content-single-course.php:134
-#: ../templates/content-single.php:39
+#: ../templates/content-single-course.php:133
+#: ../templates/content-single.php:41
 msgid "Pages:"
 msgstr "Pages:"
 
@@ -398,7 +398,6 @@ msgid "Not available"
 msgstr "Pas disponible"
 
 #: ../templates/content-single-course.php:57
-#: ../templates/content-single-course.php:127
 msgid "Registration"
 msgstr "Inscription"
 
@@ -459,12 +458,18 @@ msgid "Skills"
 msgstr "Compétences"
 
 #: ../templates/teachers.php:91
+msgid "Company Dancers"
+msgstr "Danseurs de la compagnie"
+
+#: ../templates/teachers.php:105
 msgid "Teachers"
 msgstr "Profs"
 
-#: ../templates/teachers.php:105
-msgid "The team"
-msgstr "L'équipe"
+#~ msgid "Company Dansers"
+#~ msgstr "Danseurs compagnie"
+
+#~ msgid "The team"
+#~ msgstr "L'équipe"
 
 #~ msgctxt "comments title"
 #~ msgid "One response to &ldquo;%2$s&rdquo;"

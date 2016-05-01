@@ -88,7 +88,7 @@ function display_person($indice, $id, $email, $photo, $first_name, $last_name, $
 
 <?php $profs = get_users( 'role=teacher' ); ?>
 <?php $indice = 100; ?>
-<h2><?php _e('Company Dansers','sage'); ?></h2>
+<h2><?php _e('Company Dancers','sage'); ?></h2>
 <div class="ui special four stackable cards">
     <?php foreach ( $profs as $user ) :?>
         <!-- Card -->
