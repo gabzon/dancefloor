@@ -126,7 +126,7 @@
             <h3><?php _e('Registration', 'sage'); ?></h3>
             <div class="ui form">
                 <?php gravity_form_enqueue_scripts( 23, false ); ?>
-                <?php gravity_form( 23, true, true, false, null, false, 1, true ); ?>
+                <?php gravity_form( 23, false, true, false, null, false, 1, true ); ?>
             </div>
         </section>
         <footer>
