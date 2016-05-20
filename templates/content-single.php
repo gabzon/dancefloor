@@ -21,7 +21,6 @@
             </div>
         </div>
     <?php else: ?>
-        <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>" alt="" class="ui image" />
         <article <?php post_class(); ?>>
             <header class="article-title" style="margin-top:15px;">
                 <h1 style="margin-bottom:0"><?php the_title(); ?></h1>
@@ -33,6 +32,8 @@
                 <?php the_content(); ?>
             </div>
         </article>
+        <br>
+        <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>" alt="" class="ui image" />
     <?php endif; ?>
 <?php endwhile; ?>
 <br>

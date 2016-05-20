@@ -126,15 +126,16 @@
             <h3><?php //_e('Registration', 'sage'); ?></h3>
             <div class="ui form">
                 <?php //echo $form; ?>
-                <?php echo gravity_form(23, false, false, false, '', false); ?>
+                <?php gravity_form(23, false, false, false, false, false, 0, true); ?>
+                <?php gravity_form( 23, true, true, false, null, false, 1, true ); ?>
             </div>
         </section>
         <footer>
             <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
+
         </footer>
         <?php comments_template('/templates/comments.php'); ?>
     </article>
-
 
 
 
