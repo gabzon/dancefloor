@@ -52,11 +52,11 @@
                                 <?php endif; ?>
                             </td>
                         </tr>
-                        <!-- <tr>
+                        <tr>
                             <td colspan="2">
                                 <a href="#inscription" class="ui red fluid button"><i class="edit icon"></i> <?php _e('Registration','sage') ?></a>
                             </td>
-                        </tr> -->
+                        </tr>
                     </table>
                 </div>
                 <div class="one wide column"></div>
@@ -123,7 +123,7 @@
         <?php $form = $theme_options['registration_form']; ?>
         <section id="inscription">
             <div class="ui divider"></div>
-            <h3><?php //_e('Registration', 'sage'); ?></h3>
+            <h3><?php _e('Registration', 'sage'); ?></h3>
             <div class="ui form">
                 <?php gravity_form_enqueue_scripts( 23, false ); ?>
                 <?php gravity_form( 23, true, true, false, null, false, 1, true ); ?>
