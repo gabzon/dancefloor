@@ -16,8 +16,8 @@
                 <div class="five wide column">
                     <table class="ui table very basic">
                         <tr>
-                            <td width="25%"><strong><?php _e('Level','sage'); ?>: </strong></td>
-                            <td width="75%">
+                            <td width="30%"><strong><?php _e('Level','sage'); ?>: </strong></td>
+                            <td width="70%">
                                 <?= get_post_meta($post->ID,'course_level', true); ?>
                                 <?php if (get_post_meta($post->ID,'course_level_number', true)): ?>
                                     (<?= get_post_meta($post->ID,'course_level_number', true); ?>)

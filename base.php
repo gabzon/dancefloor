@@ -44,6 +44,6 @@ do_action('get_footer');
 get_template_part('templates/footer');
 wp_footer();
 ?>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.0.0/masonry.pkgd.min.js"></script>
+
 </body>
 </html>
