@@ -36,8 +36,10 @@ $query = new WP_Query( $args );
                 <div class="column">
                     <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'single-post-thumbnail' ); ?>
                     <a href="<?php the_permalink(); ?>">
-                        <img src="<?= $image[0] ?>" class="ui image <?php echo get_image_type($image); ?>"/>
-                        <div class="title" style="text-transform:uppercase"><?php the_title(); ?> </div>
+                        <img src="<?= $image[0] ?>" class="ui image <?php echo get_image_type($image); ?>" />
+                        <div class="title" style="text-transform:uppercase;" >
+                            <span style="background:black"><?php the_title(); ?></span>
+                        </div>
                     </a>
                 </div>
                 <?php
