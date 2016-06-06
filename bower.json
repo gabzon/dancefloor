@@ -22,7 +22,7 @@
             "main": [
                 "./assets/stylesheets/_bootstrap.scss",
                 "./assets/javascripts/bootstrap/transition.js",
-                "./assets/javascripts/bootstrap/alert.js",                
+                "./assets/javascripts/bootstrap/alert.js",
                 "./assets/javascripts/bootstrap/carousel.js",
                 "./assets/javascripts/bootstrap/collapse.js",
                 "./assets/javascripts/bootstrap/dropdown.js",
@@ -43,7 +43,10 @@
             "main": [
                 "./dist/semantic.css",
                 "./dist/semantic.js"
-            ]
+            ],
+            "dependencies":{
+                "bootstrap-sass": "3.3.6"
+            }
         },
         "freewall":{
             "main":[

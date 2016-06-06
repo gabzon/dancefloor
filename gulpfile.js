@@ -286,3 +286,5 @@ gulp.task('wiredep', function() {
 gulp.task('default', ['clean'], function() {
   gulp.start('build');
 });
+
+var manifest = require('asset-builder')('./assets/manifest.json');

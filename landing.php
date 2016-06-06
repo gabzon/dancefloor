@@ -38,7 +38,7 @@ $query = new WP_Query( $args );
                     <a href="<?php the_permalink(); ?>">
                         <img src="<?= $image[0] ?>" class="ui image <?php echo get_image_type($image); ?>" />
                         <div class="title" style="text-transform:uppercase;" >
-                            <span style="background:black"><?php the_title(); ?></span>
+                            <span style="background:black; padding:3px 5px"><?php the_title(); ?></span>
                         </div>
                     </a>
                 </div>
