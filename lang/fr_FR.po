@@ -267,7 +267,7 @@ msgstr "Avancé"
 
 #: ../piklist/parts/meta-boxes/course.php:24
 msgid "All levels"
-msgstr "Tout niveaux"
+msgstr "Tous niveaux"
 
 #: ../piklist/parts/meta-boxes/course.php:30
 msgid "Level Number"
@@ -279,7 +279,7 @@ msgstr "Text du niveau"
 
 #: ../piklist/parts/meta-boxes/course.php:72
 msgid "ex: All levels"
-msgstr "ex: tout niveaux"
+msgstr "ex: Tous niveaux"
 
 #: ../piklist/parts/meta-boxes/course.php:77
 msgid "required Level"
