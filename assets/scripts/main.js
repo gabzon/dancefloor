@@ -20,6 +20,8 @@
 
             init: function() {
 
+                $('.ui.dropdown').dropdown();
+
                 $('.ui.embed').embed();
 
                 $('.special.cards .image').dimmer({on: 'hover'});
@@ -36,6 +38,11 @@
 
                 $('.plan').on('click', function(){
                     $('.ui.modal').modal('show');
+                });
+
+                $('.right.menu.open').on('click', function(e){
+                    e.preventDefault();
+                    $('.ui.vertical.menu').sidebar('toggle');
                 });
                 // JavaScript to be fired on all pages
             },

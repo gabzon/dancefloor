@@ -120,13 +120,18 @@
         <br>
         <br>
         <?php $theme_options = get_option('dancefloor_settings'); ?>
-        <?php $form = $theme_options['registration_form']; ?>
+        <?php //$form = $theme_options['registration_form']; ?>
         <section id="inscription">
             <div class="ui divider"></div>
             <h3><?php _e('Registration', 'sage'); ?></h3>
             <div class="ui form">
-                <?php gravity_form_enqueue_scripts( 23, false ); ?>
-                <?php gravity_form( 23, false, true, false, null, false, 1, true ); ?>
+                <?php
+                $page = get_page_by_title( 'Formulaire' );
+                $content = apply_filters('the_content', $page->post_content);
+                echo $content;
+                ?>
+                <?php //gravity_form_enqueue_scripts( 23, false ); ?>
+                <?php //gravity_form( 23, false, true, false, null, false, 1, true ); ?>
             </div>
         </section>
         <footer>
