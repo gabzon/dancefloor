@@ -76,3 +76,34 @@ function piklist_theme_setting_pages($pages)
 remove_filter('pre_user_description', 'wp_filter_kses');
 //add sanitization for WordPress posts
 add_filter( 'pre_user_description', 'wp_filter_post_kses');
+
+
+/*
+Custom WPML Switcher for bootstrap
+https://wpml.org/forums/topic/bootstrap-and-lang-switcher/
+*/
+function new_nav_menu_items($items,$args) {
+
+    if (function_exists('icl_get_languages')) {
+
+        $languages = icl_get_languages('skip_missing=0' && $args->theme_location == 'top_menu' );
+
+        if(1 < count($languages)){
+
+            // $ll_flag = $languages[ICL_LANGUAGE_CODE]['country_flag_url'];
+            // $ll_url = $languages[ICL_LANGUAGE_CODE]['url'];
+            // $ll_code = $languages[ICL_LANGUAGE_CODE]['language_code'];
+            // $ll_nname = $languages[ICL_LANGUAGE_CODE]['native_name'];
+
+            //$items = $items.'<li class="dropdown lang"><a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="'.$ll_url.'"><img src="'.$ll_flag.'" height="12" alt="'.$ll_code.'" width="18" /> '. $ll_nname .'</a><ul class=dropdown-menu>';
+
+            foreach($languages as $l){
+                if( ! $l['active'] ) {
+                    $items = $items.'<li class="menu-item"><a href="'.$l['url'].'"><img src="'.$l['country_flag_url'].'" height="12" alt="'.$l['language_code'].'" width="18" /> '. $l['native_name'] .'</a></li>';
+                }
+            }
+        }
+    }
+    return $items;
+}
+add_filter( 'wp_nav_menu_items', 'new_nav_menu_items',10,2 );
