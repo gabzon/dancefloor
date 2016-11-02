@@ -194,7 +194,7 @@
             </div>
             <br>
             <?php if ($bank_details) :?>
-                <a href="<?php esc_url($bank_details); ?>" class="ui red huge button"><i class="credit card alternative icon"></i> <?php _e('Bank details','sage') ?></a>
+                <a href="<?= esc_url($bank_details); ?>" class="ui red huge button"><i class="credit card alternative icon"></i> <?php _e('Bank details','sage') ?></a>
             <?php endif ?>
         </section>
 

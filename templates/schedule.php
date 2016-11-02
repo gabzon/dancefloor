@@ -20,12 +20,12 @@
             </div>
             <div class="column right aligned">
                 <?php if ($schedule): ?>
-                    <a href="<?php esc_url( $schedule ); ?>" class="ui red huge button" target="_blank">
+                    <a href="<?= esc_url( $schedule ); ?>" class="ui red huge button" target="_blank">
                         <i class="download icon"></i> <?php _e('Schedule','sage'); ?>
                     </a>
                 <?php endif; ?>
                 <?php if ($bank_details): ?>
-                    <a href="<?php esc_url($bank_details) ?>" class="ui red huge button" target="_blank">
+                    <a href="<?= esc_url($bank_details) ?>" class="ui red huge button" target="_blank">
                         <i class="credit card alternative icon"></i> <?php _e('Bank details','sage'); ?>
                     </a>
                 <?php endif; ?>
