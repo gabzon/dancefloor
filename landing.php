@@ -4,11 +4,12 @@
 */
 
 // WP_Query arguments
-$args = array (
-'post_type'              => array( 'post' ),
-'order'                  => 'DESC',
-'posts_per_page'        => 6
-);
+$args = [
+    'post_type'             => array( 'post' ),
+    'order'                 => 'DESC',
+    'posts_per_page'        => 6,
+    'category_name'         => 'wall'
+];
 
 // The Query
 $query = new WP_Query( $args );

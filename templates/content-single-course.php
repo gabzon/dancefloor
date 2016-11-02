@@ -1,3 +1,7 @@
+<?php
+  $dancefloor_options = get_option('dancefloor_settings');
+  $bank_details = $dancefloor_options['bank_details'];
+?>
 <br>
 <?php while (have_posts()) : the_post(); ?>
     <article <?php post_class(); ?>>
@@ -119,6 +123,61 @@
         </div>
         <br>
         <br>
+
+
+        <?php if (is_user_logged_in()): ?>
+            <section class="cours-videos">
+                <div class="ui divider"></div>
+                <h3><?php _e('Videos', 'sage'); ?></h3>
+                <? $videos = get_post_meta($post->ID,'course_videos'); ?>
+                <div class="ui three column grid stackable">
+                    <?php foreach ($videos as $v): ?>
+                        <div class="column">
+                            <?php $youtube_link = 'http://www.youtube.com/embed/' . $v . '?rel=0&modestbranding=1'; ?>
+                            <iframe width="100%" height="210" src="<?= $youtube_link; ?>" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </section>
+        <?php endif; ?>
+
+
+        <br>
+        <br>
+        <br>
+        <?php if (is_user_logged_in()): ?>
+            <section class="enrolled-members">
+                <div class="ui divider"></div>
+                <h3><?php _e('Enrolled members', 'sage'); ?></h3>
+                <? $enrolls = get_post_meta($post->ID,'enroll_group'); ?>
+                <table class="ui table">
+                    <?php for ($i = 0; $i < count($enrolls[0]) ; $i++) : ?>
+                        <tr>
+                            <td>
+                                <?php $user_info = get_userdata($enrolls[0][$i]['members']); ?>
+                                <?= $user_info->first_name . ' ' . $user_info->last_name;?><br>
+                            </td>
+                            <td>
+                                <?php if ($enrolls[0][$i]['member_cours_payment'] == 'paid'): ?>
+                                    <div class="ui green big label">
+                                        <?= $enrolls[0][$i]['member_cours_payment']; ?>
+                                    </div>
+                                <?php else: ?>
+                                    <div class="ui red big label">
+                                        <?php _e('Not paid', 'sage'); ?>
+                                    </div>
+                                <?php endif; ?>
+
+                            </td>
+                        </tr>
+
+                    <?php endfor; ?>
+                </table>
+            </section>
+        <?php endif; ?>
+        <br>
+        <br>
+        <br>
         <?php $theme_options = get_option('dancefloor_settings'); ?>
         <?php //$form = $theme_options['registration_form']; ?>
         <section id="inscription">
@@ -133,14 +192,16 @@
                 <?php //gravity_form_enqueue_scripts( 23, false ); ?>
                 <?php //gravity_form( 23, false, true, false, null, false, 1, true ); ?>
             </div>
+            <br>
+            <?php if ($bank_details) :?>
+                <a href="<?php esc_url($bank_details); ?>" class="ui red huge button"><i class="credit card alternative icon"></i> <?php _e('Bank details','sage') ?></a>
+            <?php endif ?>
         </section>
+
         <footer>
             <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
-
         </footer>
         <?php comments_template('/templates/comments.php'); ?>
     </article>
-
-
 
 <?php endwhile; ?>

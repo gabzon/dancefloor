@@ -28,7 +28,7 @@ if ( ! function_exists('cours_post_type') ) {
             'label'                 => __( 'Course', 'sage' ),
             'description'           => __( 'List of danse courses', 'sage' ),
             'labels'                => $labels,
-            'supports'              => array('title', 'thumbnail', 'revisions','editor'),
+            'supports'              => array('title', 'thumbnail', 'revisions','editor', 'comments'),
             'taxonomies'            => array( 'category', 'post_tag'),
             'hierarchical'          => false,
             'public'                => true,

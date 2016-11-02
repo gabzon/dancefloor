@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: dancefloor\n"
-"POT-Creation-Date: 2016-05-02 01:17+0100\n"
+"POT-Creation-Date: 2016-11-02 11:51+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "Sorry, but the page you were trying to view does not exist."
 msgstr "Désolé, cette page est introuvable."
 
-#: ../base.php:14
+#: ../base.php:22
 msgid ""
 "You are using an <strong>outdated</strong> browser. Please <a href=\"http://"
 "browsehappy.com/\">upgrade your browser</a> to improve your experience."
@@ -32,33 +32,33 @@ msgstr ""
 "\"http://browsehappy.com/\">mettre à jour</a> pour visionner votre site "
 "correctement."
 
-#: ../freewall.php:48 ../landing.php:46 ../masonry.php:49
+#: ../freewall.php:48 ../landing.php:49 ../masonry.php:49
 msgid "There are no post"
 msgstr "Il n'y a pas d'articles"
 
-#: ../functions.php:28
+#: ../functions.php:29
 #, php-format
 msgid "Error locating %s for inclusion"
 msgstr "Erreurr localiser %s pour inclusion"
 
-#: ../functions.php:51 ../piklist/parts/meta-boxes/course.php:151
-#: ../templates/schedule.php:38
+#: ../functions.php:52 ../piklist/parts/meta-boxes/course.php:151
+#: ../templates/schedule.php:67
 msgid "Teacher"
 msgstr "Prof"
 
-#: ../functions.php:52
+#: ../functions.php:53
 msgid "Assistant"
 msgstr "Assistant"
 
-#: ../functions.php:58
+#: ../functions.php:59
 msgid "Custom Settings"
 msgstr "Réglages personnalisé"
 
-#: ../functions.php:59
+#: ../functions.php:60
 msgid "Settings"
 msgstr "Réglages"
 
-#: ../functions.php:68
+#: ../functions.php:69
 msgid "Save"
 msgstr "Sauvegarder"
 
@@ -105,7 +105,7 @@ msgstr "Non Trouvé"
 
 #: ../models/post-type/classroom.php:7 ../models/post-type/classroom.php:8
 #: ../models/post-type/classroom.php:28
-#: ../templates/content-single-course.php:84
+#: ../templates/content-single-course.php:88
 msgid "Classroom"
 msgstr "Salle"
 
@@ -210,7 +210,7 @@ msgstr "Ville"
 msgid "Neighborhood"
 msgstr "Quartier"
 
-#: ../piklist/parts/meta-boxes/classroom.php:37 ../templates/schedule.php:41
+#: ../piklist/parts/meta-boxes/classroom.php:37 ../templates/schedule.php:70
 msgid "Place"
 msgstr "Lieu"
 
@@ -249,7 +249,7 @@ msgstr "Titre"
 
 #: ../piklist/parts/meta-boxes/course.php:16
 #: ../piklist/parts/meta-boxes/course.php:60
-#: ../templates/content-single-course.php:19 ../templates/schedule.php:34
+#: ../templates/content-single-course.php:23 ../templates/schedule.php:63
 msgid "Level"
 msgstr "Niveau"
 
@@ -271,7 +271,7 @@ msgstr "Tous niveaux"
 
 #: ../piklist/parts/meta-boxes/course.php:30
 msgid "Level Number"
-msgstr "Numéro du niveau"
+msgstr "N° du niveau"
 
 #: ../piklist/parts/meta-boxes/course.php:69
 msgid "Level text"
@@ -302,7 +302,7 @@ msgid "Session period"
 msgstr "Période de la session"
 
 #: ../piklist/parts/meta-boxes/course.php:110
-#: ../templates/content-single-course.php:28
+#: ../templates/content-single-course.php:32
 msgid "Day"
 msgstr "Jour"
 
@@ -326,13 +326,38 @@ msgstr "Vacances"
 msgid "Attention Message"
 msgstr "Message d'attention"
 
-#: ../piklist/parts/settings/settings.php:8
-msgid "Registration form"
-msgstr "Formulaire d'inscription"
+#: ../piklist/parts/meta-boxes/course.php:178
+msgid "Classroom location"
+msgstr "Emplacement de la classe"
 
-#: ../piklist/parts/settings/settings.php:9
-msgid "Copy and paste gravity form shortcode"
-msgstr "Copiez et collez le shortcode de l'extension gravity form"
+#: ../piklist/parts/meta-boxes/course.php:185
+msgid "Video"
+msgstr "Vidéo"
+
+#: ../piklist/parts/meta-boxes/course.php:195
+msgid "Choose a member"
+msgstr "Choisissez un élève"
+
+#: ../piklist/parts/meta-boxes/course.php:204
+msgid "Payment"
+msgstr "Paiement"
+
+#: ../piklist/parts/meta-boxes/course.php:206
+msgid "Paid"
+msgstr "Payé"
+
+#: ../piklist/parts/meta-boxes/course.php:213
+#: ../templates/content-single-course.php:151
+msgid "Enrolled members"
+msgstr "Inscrits"
+
+#: ../piklist/parts/settings/settings.php:8
+msgid "Bank Details"
+msgstr "Coordonnées bancaires"
+
+#: ../piklist/parts/settings/settings.php:15 ../templates/schedule.php:24
+msgid "Schedule"
+msgstr "Planning"
 
 #: ../piklist/parts/users/profs.php:10 ../piklist/parts/users/profs.php:14
 msgid "Add File(s)"
@@ -376,42 +401,55 @@ msgstr "Commentaires fermés."
 
 #: ../templates/content-page.php:2
 #: ../templates/content-single-classroom.php:14
-#: ../templates/content-single-course.php:133
-#: ../templates/content-single.php:41
+#: ../templates/content-single-course.php:202
+#: ../templates/content-single.php:42
 msgid "Pages:"
 msgstr "Pages:"
 
-#: ../templates/content-single-course.php:32
+#: ../templates/content-single-course.php:36
 msgid "Time"
 msgstr "Heure"
 
-#: ../templates/content-single-course.php:36
+#: ../templates/content-single-course.php:40
 msgid "Period"
 msgstr "Période"
 
-#: ../templates/content-single-course.php:41
+#: ../templates/content-single-course.php:45
 msgid "Level required"
 msgstr "Niveau requis"
 
-#: ../templates/content-single-course.php:51
+#: ../templates/content-single-course.php:55
 msgid "Not available"
 msgstr "Pas disponible"
 
-#: ../templates/content-single-course.php:57
+#: ../templates/content-single-course.php:61
+#: ../templates/content-single-course.php:185
 msgid "Registration"
 msgstr "Inscription"
 
-#: ../templates/content-single-course.php:69
+#: ../templates/content-single-course.php:73
 msgid "Holidays (there won't be courses during this dates)"
 msgstr "Vacances (Il n'y aura pas des vacances pendant ses dates)"
 
-#: ../templates/content-single-course.php:105
+#: ../templates/content-single-course.php:109
 msgid "Open on Google maps"
 msgstr "Ouvrir en google maps"
 
-#: ../templates/content-single-course.php:111
+#: ../templates/content-single-course.php:115
 msgid "Attention: street shoes not allowed"
 msgstr "Attention: chaussure de ville pas permis"
+
+#: ../templates/content-single-course.php:131
+msgid "Videos"
+msgstr "Vidéos"
+
+#: ../templates/content-single-course.php:167
+msgid "Not paid"
+msgstr "Pas payé"
+
+#: ../templates/content-single-course.php:197 ../templates/schedule.php:29
+msgid "Bank details"
+msgstr "Coordonnées bancaires"
 
 #: ../templates/entry-meta.php:2
 msgid "By"
@@ -421,31 +459,31 @@ msgstr "Par"
 msgid "Toggle navigation"
 msgstr "Basculer la navigation"
 
-#: ../templates/schedule.php:65
+#: ../templates/schedule.php:91
 msgid "Monday"
 msgstr "Lundi"
 
-#: ../templates/schedule.php:75
+#: ../templates/schedule.php:101
 msgid "Tuesday"
 msgstr "Mardi"
 
-#: ../templates/schedule.php:84
+#: ../templates/schedule.php:110
 msgid "Wednesday"
 msgstr "Mercredi"
 
-#: ../templates/schedule.php:93
+#: ../templates/schedule.php:119
 msgid "Thursday"
 msgstr "Jeudi"
 
-#: ../templates/schedule.php:102
+#: ../templates/schedule.php:128
 msgid "Friday"
 msgstr "Vendredi"
 
-#: ../templates/schedule.php:111
+#: ../templates/schedule.php:137
 msgid "Saturday"
 msgstr "Samedi"
 
-#: ../templates/schedule.php:120
+#: ../templates/schedule.php:146
 msgid "Sunday"
 msgstr "Dimanche"
 
@@ -464,6 +502,12 @@ msgstr "Danseurs - Compagnie"
 #: ../templates/teachers.php:105
 msgid "Teachers"
 msgstr "Profs"
+
+#~ msgid "Registration form"
+#~ msgstr "Formulaire d'inscription"
+
+#~ msgid "Copy and paste gravity form shortcode"
+#~ msgstr "Copiez et collez le shortcode de l'extension gravity form"
 
 #~ msgid "Company Dansers"
 #~ msgstr "Danseurs compagnie"

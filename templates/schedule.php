@@ -3,9 +3,37 @@
 * Template Name: Schedule
 */
 ?>
+<?php use Roots\Sage\Titles; ?>
+
+<?php
+  $dancefloor_options = get_option('dancefloor_settings');
+
+  $bank_details = $dancefloor_options['bank_details'];
+  $schedule = $dancefloor_options['schedule'];
+?>
 
 <?php while (have_posts()) : the_post(); ?>
-    <?php get_template_part('templates/page', 'header'); ?>
+    <div class="page-header">
+        <div class="ui two column grid stackable">
+            <div class="column">
+                <h1><?= Titles\title(); ?></h1>
+            </div>
+            <div class="column right aligned">
+                <?php if ($schedule): ?>
+                    <a href="<?php esc_url( $schedule ); ?>" class="ui red huge button" target="_blank">
+                        <i class="download icon"></i> <?php _e('Schedule','sage'); ?>
+                    </a>
+                <?php endif; ?>
+                <?php if ($bank_details): ?>
+                    <a href="<?php esc_url($bank_details) ?>" class="ui red huge button" target="_blank">
+                        <i class="credit card alternative icon"></i> <?php _e('Bank details','sage'); ?>
+                    </a>
+                <?php endif; ?>
+
+            </div>
+        </div>
+    </div>
+
     <?php get_template_part('templates/content', 'page'); ?>
 <?php endwhile; ?>
 
@@ -41,9 +69,6 @@
             <?php if ($room): ?>
                 <span class="course-time"><?= __('Place','sage'); ?>: <?= get_the_title($room); ?></span>
             <?php endif; ?>
-
-
-
         </div>
     </a>
     <br>
