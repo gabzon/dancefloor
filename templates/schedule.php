@@ -33,7 +33,7 @@
             </div>
         </div>
     </div>
-    <?php get_template_part('templates/content', 'page'); ?>
+    <?php //get_template_part('templates/content', 'page'); ?>
 <?php endwhile; ?>
 
 <?php function display_course($key) { ?>
