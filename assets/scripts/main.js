@@ -29,13 +29,6 @@
                     //$('.ui.modal').modal('show');
                 });
 
-                $('.masonry').masonry({
-                    itemSelector: '.grid-item',
-                    columnWidth: '.grid-sizer',
-                    percentPosition: true,
-                    gutter: 20,
-                });
-
                 $('.plan').on('click', function(){
                     $('.ui.modal').modal('show');
                 });

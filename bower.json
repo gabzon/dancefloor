@@ -9,7 +9,8 @@
     "dependencies": {
         "bootstrap-sass": "3.3.6",
         "semantic": "semantic-ui#^2.1.8",
-        "freewall": "^1.0.5"
+        "freewall": "^1.0.5",
+        "react": "^15.3.2"
     },
     "overrides": {
         "masonry": {
@@ -44,12 +45,12 @@
                 "./dist/semantic.css",
                 "./dist/semantic.js"
             ],
-            "dependencies":{
+            "dependencies": {
                 "bootstrap-sass": "3.3.6"
             }
         },
-        "freewall":{
-            "main":[
+        "freewall": {
+            "main": [
                 "./freewall.js"
             ]
         }

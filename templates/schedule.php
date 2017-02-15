@@ -33,7 +33,6 @@
             </div>
         </div>
     </div>
-
     <?php get_template_part('templates/content', 'page'); ?>
 <?php endwhile; ?>
 
@@ -151,6 +150,10 @@
     <?php endif; ?>
 </div>
 <br>
+
+<?php while (have_posts()) : the_post(); ?>
+    <?php get_template_part('templates/content', 'page'); ?>
+<?php endwhile; ?>
 <!-- <h3><?php //_e('Classrooms','sage'); ?></h3>
 <hr> -->
 <?php //Course::display_classrooms(); ?>
