@@ -33,7 +33,7 @@
             </div>
         </div>
     </div>
-    <?php //get_template_part('templates/content', 'page'); ?>
+    <?php get_template_part('templates/content', 'page'); ?>
 <?php endwhile; ?>
 
 <?php function display_course($key) { ?>
@@ -152,8 +152,12 @@
 <br>
 
 <?php while (have_posts()) : the_post(); ?>
+    <?php     function my_content($content) {
+            $page = get_page_by_title( 'Proposition' );
+                return $content;
+        }
 
-    <?php get_page_by_title( 'Proposition' ); ?>
+        add_filter('the_content', 'my_content'); ?>
     <?php //get_template_part('templates/content', 'page'); ?>
 <?php endwhile; ?>
 <!-- <h3><?php //_e('Classrooms','sage'); ?></h3>
