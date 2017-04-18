@@ -150,14 +150,11 @@
     <?php endif; ?>
 </div>
 <br>
-
+<div class="formulaire-proposition">
+    <?php $page = get_page_by_title( 'Proposition' ); ?>
+    <?php echo $page->the_content; ?>
+</div>
 <?php while (have_posts()) : the_post(); ?>
-    <?php     function my_content($content) {
-            $page = get_page_by_title( 'Proposition' );
-                return $content;
-        }
-
-        add_filter('the_content', 'my_content'); ?>
     <?php //get_template_part('templates/content', 'page'); ?>
 <?php endwhile; ?>
 <!-- <h3><?php //_e('Classrooms','sage'); ?></h3>
