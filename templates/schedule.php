@@ -33,7 +33,7 @@
             </div>
         </div>
     </div>
-    <?php get_template_part('templates/content', 'page'); ?>
+    <?php //get_template_part('templates/content', 'page'); ?>
 <?php endwhile; ?>
 
 <?php function display_course($key) { ?>
@@ -152,7 +152,9 @@
 <br>
 
 <?php while (have_posts()) : the_post(); ?>
-    <?php get_template_part('templates/content', 'page'); ?>
+
+    <?php get_page_by_title( 'Proposition' ); ?>
+    <?php //get_template_part('templates/content', 'page'); ?>
 <?php endwhile; ?>
 <!-- <h3><?php //_e('Classrooms','sage'); ?></h3>
 <hr> -->
