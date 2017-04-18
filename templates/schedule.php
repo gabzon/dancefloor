@@ -33,7 +33,11 @@
             </div>
         </div>
     </div>
-    <?php get_template_part('templates/content', 'page'); ?>
+    <?php //get_template_part('templates/content', 'page'); ?>
+    <div class="formulaire-proposition">
+        <?php $page = get_page_by_title( 'Proposition' , OBJECT, 'page'); ?>
+        <?php echo $page->post_content; ?>
+    </div>
 <?php endwhile; ?>
 
 <?php function display_course($key) { ?>
@@ -150,12 +154,9 @@
     <?php endif; ?>
 </div>
 <br>
-<div class="formulaire-proposition">
-    <?php $page = get_page_by_title( 'Proposition' , OBJECT, 'page'); ?>
-    <?php echo $page->post_content; ?>
-</div>
+
 <?php while (have_posts()) : the_post(); ?>
-    <?php //get_template_part('templates/content', 'page'); ?>
+    <?php get_template_part('templates/content', 'page'); ?>
 <?php endwhile; ?>
 <!-- <h3><?php //_e('Classrooms','sage'); ?></h3>
 <hr> -->
